@@ -14,7 +14,7 @@ export default function Page() {
                 <Navbar />  
                 <Home />
                 <Skills />
-                {/* <Projects /> */}
+                <Projects />
             </div>
         </div>
   );
