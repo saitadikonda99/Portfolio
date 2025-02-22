@@ -2,7 +2,7 @@ import React from 'react';
 import './page.css'
 
 import Navbar from "./components/navbar/navbar";
-import Profile from  './ui/profile/profile'
+import Profile from  './profile/profile'
 import Skills from './ui/skills/skills'
 import Projects from './ui/projects/projects'
 
