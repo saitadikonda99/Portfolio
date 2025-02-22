@@ -5,8 +5,7 @@ import './profile.css'
 
 import { MdArrowOutward } from "react-icons/md";
 
-
-const Profile = () => {
+const profile = () => {
   return (
         <div className="ProfileComponent">
             <div className="ProfileComponent-in">
@@ -52,4 +51,4 @@ const Profile = () => {
   )
 }
 
-export default Profile
+export default profile
