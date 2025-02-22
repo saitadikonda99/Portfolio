@@ -1,0 +1,61 @@
+.NavbarComponent {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+
+.NavbarComponent-in {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0rem 1rem 0rem;
+}
+
+.navbar-one {
+    width: 10%;
+}
+
+.navbar-one a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.navbar-two {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-two a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.navbar-two a:hover {
+    color: blue;
+}
+
+.nav-github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    border: 1px solid black;
+    padding: .5rem 1rem;
+}
+
+.nav-github:hover {
+    background-color: black;
+}
+
+.nav-github:hover,
+.navbar-two a.nav-github:hover {
+    color: white;
+}
