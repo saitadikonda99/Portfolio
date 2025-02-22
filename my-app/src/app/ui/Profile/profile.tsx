@@ -13,11 +13,11 @@ const home = () => {
             <div className="ProfileComponent-in">
                
                 <div className="profile-one">
-                    <h1>Hey, I'm Sai Manikanta Tadikonda!</h1>
+                    <h1>Hey, I&apos;m Sai Manikanta Tadikonda!</h1>
                 </div>
 
                 <div className="profile-two">
-                    <h1>I'm a <span>Full Stack Developer</span> &</h1>
+                    <h1>I&apos;m a <span>Full Stack Developer</span> &</h1>
                 </div>
 
                 <div className="profile-three">
@@ -38,7 +38,7 @@ const home = () => {
                     
                     <div className="profile-four-two">
                         <p>Feel free to explore my portfolio and react out.</p>
-                        <p>- I'd love to connect!</p>
+                        <p>- I&apos;d love to connect!</p>
                     </div>
 
                 </div>

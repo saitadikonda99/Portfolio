@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+import React from 'react';
 import './page.css'
 
 import Navbar from "./components/navbar/navbar";

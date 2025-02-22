@@ -6,7 +6,7 @@ import './navbar.css'
 
 import { FaLinkedin } from "react-icons/fa";
 
-const navbar = () => {
+const Navbar = () => {
 
     const [isScrollingUp, setIsScrollingUp] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
@@ -50,4 +50,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar

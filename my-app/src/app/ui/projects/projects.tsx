@@ -57,7 +57,7 @@ const Projects = () => {
             <div className="ProjectsComponent-in">
                 <div className="projects-one">
                     <p>FEATURED PROJECTS</p>
-                    <h1>What I've Built</h1>
+                    <h1>What I&apos;ve Built</h1>
                 </div>
                 <div className="projects-two">
                     {projectsArray.map((project) => (
