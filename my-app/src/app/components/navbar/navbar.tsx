@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import './navbar.css'
 
-import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const navbar = () => {
 
@@ -43,7 +43,7 @@ const navbar = () => {
                     <Link href='/skills'>Skills</Link>
                     <Link href='/projects'>Projects</Link>
                     <Link href='/blogs'>Blogs</Link>
-                    <Link href="https://github.com/saitadikonda99/" target="_blank" className='nav-github'> <FaGithub /> Github </Link>
+                    <Link href="https://www.linkedin.com/in/tadikondasaimanikanta" target="_blank" className='nav-github'> <FaLinkedin /> Linkedin </Link>
                 </div>
             </div>
         </div>

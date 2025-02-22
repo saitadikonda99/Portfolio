@@ -22,7 +22,7 @@ const home = () => {
 
                 <div className="profile-three">
                     <div className="profile-three-one">
-                        <h1>DevOps Engineer</h1>
+                        <h1>DevOps Engineer.</h1>
                     </div>
                     <div className="profile-three-two">
                         <div className="dot"></div>

@@ -3,7 +3,9 @@ import Image from "next/image";
 import './page.css'
 
 import Navbar from "./components/navbar/navbar";
-import Home from './ui/Profile/profile'
+import Home from './ui/profile/profile'
+import Skills from './ui/skills/skills'
+import Projects from './ui/projects/projects'
 
 export default function Page() {
   return (
@@ -11,6 +13,8 @@ export default function Page() {
             <div className="HomeComponent-in">
                 <Navbar />  
                 <Home />
+                <Skills />
+                {/* <Projects /> */}
             </div>
         </div>
   );
