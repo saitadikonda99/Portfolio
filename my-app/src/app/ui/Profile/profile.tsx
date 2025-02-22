@@ -3,7 +3,6 @@ import Link from 'next/link'
 
 import './profile.css'
 
-
 import { MdArrowOutward } from "react-icons/md";
 
 
