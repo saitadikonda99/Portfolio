@@ -39,7 +39,7 @@ const skillIcons = [
     <FaGitAlt className="skill-icon-git" key="git" />
 ];
 
-const skills = () => {
+const Skills = () => {
   return (
         <div className="SkillsComponent">
             <div className="SkillsComponent-in">
@@ -57,5 +57,4 @@ const skills = () => {
         </div>
   )
 }
-
-export default skills
+export default Skills
