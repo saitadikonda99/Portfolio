@@ -1,0 +1,108 @@
+
+
+.ProjectsComponent {
+    width: 100%;
+}
+
+.ProjectsComponent-in {
+    width: 100%;
+    padding: 1rem 0rem;
+}
+
+.projects-one {
+    width: 100%;
+}
+
+.projects-one h1 {
+    color: var(--text);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.Project-Card {
+    width: 100%;
+    padding: 1rem 0rem;
+}
+
+.Project-Card-in {
+    width: 100%;
+    padding: 1rem;
+    border: var(--border);
+    border-radius: 5px;
+}
+
+.project-card-one {
+    width: 100%;
+}
+
+.project-card-one a {
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+}
+
+.project-card-one a svg {
+    color: var(--text);
+}
+
+.project-card-one a:hover {
+    color: var(--text);
+    text-decoration: underline;
+}
+
+.project-card-two {
+    width: 100%;
+}
+
+.project-card-two p {
+    font-size: .8rem;
+    color: var(--subText);
+}
+
+.project-card-three {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.Project-stack {
+    border: var(--border);
+    padding: .2rem .5rem;
+    border-radius: 5px;
+}
+
+.Project-stack p {
+    font-size: .8rem;
+    color: rgb(125, 125, 125);
+}
+
+.project-card-four {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.project-card-four a {
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color:  var(--alternateText);
+    background-color: var(--alternateBackground);
+    padding: .2rem .5rem;
+    border-radius: 5px;
+    text-decoration: none;
+}

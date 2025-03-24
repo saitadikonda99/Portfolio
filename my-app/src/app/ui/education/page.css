@@ -1,0 +1,89 @@
+
+
+.EducationComponent {
+    width: 100%;
+}
+
+.EducationComponent-in {
+    width: 100%;
+}
+
+.education-one {
+    width: 100%;
+}
+
+.education-one h1 {
+    color: var(--text);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.education-two {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+
+.education-two-one {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.education-two-one-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-two-one-one svg {
+    font-size: 1.2rem;
+    color: var(--subText);
+}
+
+.education-two-one-two {
+    width: 100%;
+}
+
+.education-two-one-two p {
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.education-two-one-two p:nth-of-type(2) {
+    font-size: .8rem;
+    color: var(--subText);
+}
+
+.education-two-two {
+    width: 20%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.education-two-two p {
+    font-size: 1rem;
+    color: var(--subText);
+}
+
+@media screen and (max-width: 600px) {
+
+    .education-two-one-two p {
+        font-size: .8rem;
+    }
+    
+    .education-two-one-two p:nth-of-type(2) {
+        font-size: .6rem;
+        color: var(--subText);
+    }
+
+    .education-two-two p {
+        font-size: .6rem;
+    }
+}

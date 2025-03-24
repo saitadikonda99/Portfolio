@@ -1,28 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: white;
+  --alternateBackground: black;
+  --text: black;
+  --alternateText: white;
+  --subText: rgb(125, 125, 125);
+  --border: 1px solid rgb(224, 223, 223);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: black;
+  --alternateBackground: white;
+  --text: white;
+  --alternateText: black;
+  --subText: rgb(125, 125, 125);
+  --border: 1px solid rgb(80, 80, 80);
 }
-
 
 body {
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+  transition: background-color 0.2s, color 0.2s;
 }

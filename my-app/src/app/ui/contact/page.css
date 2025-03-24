@@ -1,0 +1,94 @@
+.ContactComponent {
+    width: 100%;
+}
+
+.ContactComponent-in {
+    width: 100%;
+}
+
+.contact-one {
+    width: 100%;
+}
+
+.contact-one h1 {
+    color: var(--text);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.contact-two {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    border-radius: 5px;
+}
+
+.contact-two-one {
+    width: fit-content;
+}
+
+.contact-two-one a {
+    color: var(--alternateText);
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: var(--alternateBackground);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact-two-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: var(--border);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.contact-two-two a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.contact-two-two a:hover {
+    transform: scale(1.4);
+}
+
+.contact-two-two a:hover ~ a {
+    transform: scale(1.2);
+}
+
+.contact-two-two svg {
+    color: var(--text);
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.contact-two-two svg:hover {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    .contact-two-one a {
+        font-size: .6rem;
+    }
+
+    .contact-two-two {
+        gap: .5rem;
+    }
+
+    .contact-two-two svg {
+        font-size: 1.2rem;
+    }
+}

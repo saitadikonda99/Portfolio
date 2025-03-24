@@ -1,0 +1,37 @@
+
+
+.AboutComponent {
+    width: 100%;
+}
+
+.AboutComponent-in {
+    width: 100%;
+}
+
+.about-one {
+    width: 100%;
+}
+
+.about-one h1 {
+    color: var(--text);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.About-two {
+    width: 100%;
+}
+
+.About-two p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text);
+    padding: .5rem 0rem;
+}
+
+.About-two p a {
+    color: var(--text);
+    text-decoration: underline;
+    font-weight: 700;
+    padding: 0rem .2rem;
+}

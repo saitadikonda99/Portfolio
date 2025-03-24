@@ -1,0 +1,25 @@
+
+
+.FooterComponent {
+    width: 100%;
+}
+
+.FooterComponent-in {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0rem;
+}
+
+.FooterComponent-in p {
+    font-size: .8rem;
+    color: rgb(125, 125, 125);
+}
+
+
+@media screen and (max-width: 600px) {
+    .FooterComponent-in p {
+        font-size: .6rem;
+    }
+}

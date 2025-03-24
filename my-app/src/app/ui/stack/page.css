@@ -1,0 +1,72 @@
+.StackComponent {
+    width: 100%;
+}
+
+.StackComponent-in {
+    width: 100%;
+    padding: 2rem 0rem;
+}
+
+.stack-one {
+    width: 100%;
+}
+
+.stack-one h1 {
+    color: var(--text);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.stack-two {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+
+.stack-item {
+    width: 4%;
+    position: relative;
+    cursor: pointer;
+}
+
+.stack-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stack-item::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: translateX(-50%);
+    background-color: var(--alternateBackground);
+    color: var(--alternateText);
+    padding: .2rem .8rem;
+    border-radius: 4px;
+    font-size: .8rem;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    white-space: nowrap;
+    max-width: max-content;
+}
+
+.stack-item:hover::after {
+    opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+
+    .stack-two {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    .stack-item {
+        width: 8%;
+    }
+}

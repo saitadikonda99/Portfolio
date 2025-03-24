@@ -1,53 +1,102 @@
-"use client"
-import React, { useState, useEffect } from 'react'
-import Link from 'next/link'
+"use client";
+import React, { useState, useEffect } from "react";
+import "./navbar.css";
 
-import './navbar.css'
-
-import { FaLinkedin } from "react-icons/fa";
+// Icons
+import { RiHome6Fill } from "react-icons/ri";
+import { CgProfile } from "react-icons/cg";
+import { LuCodeXml } from "react-icons/lu";
+import { BsPersonLinesFill, BsFillMoonStarsFill } from "react-icons/bs";
+import { LuNotebook } from "react-icons/lu";
+import { MdOutlineLightMode } from "react-icons/md";
 
 const Navbar = () => {
-
-    const [isScrollingUp, setIsScrollingUp] = useState(false);
-    const [lastScrollY, setLastScrollY] = useState(0);
+    const [theme, setTheme] = useState<"light" | "dark">("light");
+    const [mounted, setMounted] = useState(false);  
 
     useEffect(() => {
-        const handleScroll = () => {
-          const currentScrollY = window.scrollY;
-    
-          if (currentScrollY > 10) {
-            setIsScrollingUp(true);
-          } else {
-            setIsScrollingUp(false);
-          }
-    
-          setLastScrollY(currentScrollY);
-        };
-    
-        window.addEventListener("scroll", handleScroll);
-    
-        return () => {
-          window.removeEventListener("scroll", handleScroll);
-        };
-    }, [lastScrollY]);
+        const savedTheme =
+            (localStorage.getItem("theme") as "light" | "dark") ||
+            (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        
+        setTheme(savedTheme as "light" | "dark");
+        document.documentElement.classList.toggle("dark", savedTheme === "dark");
+        setMounted(true);
+    }, []);
 
-  return (
-        <div className={`NavbarComponent ${isScrollingUp ? "scrollingUp" : ""}`}>
+    const toggleTheme = () => {
+        const newTheme = theme === "light" ? "dark" : "light";
+        setTheme(newTheme);
+        document.documentElement.classList.toggle("dark", newTheme === "dark");
+        localStorage.setItem("theme", newTheme);
+    };
+
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            const offset = 80; // Adjust this value to account for the navbar height
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    };
+
+    // Avoid rendering the component before mounting to prevent SSR mismatch
+    if (!mounted) return null;
+
+    return (
+        <div className="NavbarComponent">
             <div className="NavbarComponent-in">
-                <div className="navbar-one">
-                    <a href="mailto:saitadikonda.cse@gmail.com">saitadikonda.cse@gmail.com</a>
-                </div>
-                <div className="navbar-two">
-                    <Link href="/">Home</Link>
-                    <Link href='/about'>About</Link>
-                    <Link href='/skills'>Skills</Link>
-                    <Link href='/projects'>Projects</Link>
-                    <Link href='/blogs'>Blogs</Link>
-                    <Link href="https://www.linkedin.com/in/tadikondasaimanikanta" target="_blank" className='nav-github'> <FaLinkedin /> Linkedin </Link>
+                <div className="Navbar-one">
+                    <div 
+                        className="NavbarComponent-item" 
+                        data-tooltip="Home"
+                        onClick={() => scrollToSection("profile")}
+                    >
+                        <RiHome6Fill />
+                    </div>
+                    <div 
+                        className="NavbarComponent-item" 
+                        data-tooltip="About"
+                        onClick={() => scrollToSection("about")}
+                    >
+                        <CgProfile />
+                    </div>
+                    <div 
+                        className="NavbarComponent-item" 
+                        data-tooltip="Projects"
+                        onClick={() => scrollToSection("projects")}
+                    >
+                        <LuCodeXml />
+                    </div>
+                    <div 
+                        className="NavbarComponent-item" 
+                        data-tooltip="Connect"
+                        onClick={() => scrollToSection("contact")}
+                    >
+                        <BsPersonLinesFill />
+                    </div>
+                    <div 
+                        className="NavbarComponent-item" 
+                        data-tooltip="Blog"
+                    >
+                        <LuNotebook />
+                    </div>
+                    <div
+                        className="NavbarComponent-item"
+                        data-tooltip={theme === "light" ? "Dark Mode" : "Light Mode"}
+                        onClick={toggleTheme}
+                    >
+                        {theme === "light" ? <MdOutlineLightMode /> : <BsFillMoonStarsFill />}
+                    </div>
                 </div>
             </div>
         </div>
-  )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
