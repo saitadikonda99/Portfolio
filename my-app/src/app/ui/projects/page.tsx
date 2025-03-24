@@ -43,8 +43,8 @@ const projects: Project[] = [
         title: "Personal Portfolio",
         description: "My Personal Portfolio",
         techStack: ["Next.js", "TypeScript",],
-        liveLink: "https://github.com/saitadikonda99/Portfolio",
-        sourceLink: "https://www.saitadikonda.in"
+        liveLink: "https://www.saitadikonda.in",
+        sourceLink: "https://github.com/saitadikonda99/Portfolio"
     }
 
 ];
