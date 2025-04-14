@@ -18,7 +18,7 @@ const page = () => {
                         <p>Third year Computer Science student | Full Stack Developer | DevOps Engineer based in india</p>
                     </div>
                     <div className="profile-one-three">
-                        <Link href="https://drive.google.com/file/d/1gvaXNQ3Y7HXNrvJRHnZ6SIBuy0wGYkTk/view" target='_blank'> <RiExternalLinkLine /> Resume </Link>
+                        <Link href="https://drive.google.com/file/d/1ureTAB7e7fBHoHL5m1x9mmIyIDmUwZAV/view" target='_blank'> <RiExternalLinkLine /> Resume </Link>
                     </div>
                 </div>
                 <div className="profile-two">
