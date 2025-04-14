@@ -26,6 +26,13 @@ const projects: Project[] = [
         sourceLink: "https://github.com/saitadikonda99/Kepler-452b"
     },
     {
+        title: "Own Cache Database",
+        description: "A custom cache database using Redis and Node.js",
+        techStack: ["Node.js", "Docker"],
+        liveLink: "https://github.com/saitadikonda99/Own-Cache-Database",
+        sourceLink: "https://github.com/saitadikonda99/Own-Cache-Database"
+    },
+    {
         title: "AgroDrones Tech (Freelance Project)",
         description: "Agricultural Drone Sales and Services Website",
         techStack: ["Next.js", "TypeScript", "MongoDB", "Vercel"],
