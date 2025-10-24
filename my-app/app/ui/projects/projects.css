@@ -6,7 +6,7 @@
 
 .ProjectsComponent-in {
     width: 100%;
-    padding: 1rem 0rem;
+    padding: 2rem 0rem;
 }
 
 .projects-one {
@@ -14,29 +14,56 @@
 }
 
 .projects-one h1 {
-    color: var(--text);
+    color: black;
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.Project-Card {
+.projects-two {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     padding: 1rem 0rem;
 }
 
-.Project-Card-in {
+.projectCard {
     width: 100%;
-    padding: 1rem;
-    border: var(--border);
-    border-radius: 5px;
 }
+
+.projectCard-in {
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.projectCard-in.index-0 {
+    border: 2px solid rgb(10, 102, 194);
+    background-color: rgba(10, 102, 194, 0.1);
+}
+
+.projectCard-in.index-1 {
+    border: 2px solid rgb(234, 67, 53);
+    background-color: rgba(234, 67, 53, 0.1);
+}
+
+.projectCard-in.index-2 {
+    border: 2px solid rgb(251, 188, 5);
+    background-color: rgba(251, 188, 5, 0.1);
+}
+
+.projectCard-in.index-3 {
+    border: 2px solid rgb(52, 168, 83);
+    background-color: rgba(52, 168, 83, 0.1);
+}
+
 
 .project-card-one {
     width: 100%;
 }
 
 .project-card-one a {
-    color: var(--text);
+    color: black;
     font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
@@ -47,11 +74,11 @@
 }
 
 .project-card-one a svg {
-    color: var(--text);
+    color: black;
 }
 
 .project-card-one a:hover {
-    color: var(--text);
+    color: black;
     text-decoration: underline;
 }
 
@@ -61,7 +88,7 @@
 
 .project-card-two p {
     font-size: .8rem;
-    color: var(--subText);
+    color: rgb(125, 125, 125);;
 }
 
 .project-card-three {
@@ -75,14 +102,15 @@
 }
 
 .Project-stack {
-    border: var(--border);
+    background-color: white;
+    border: 1px solid black;
     padding: .2rem .5rem;
     border-radius: 5px;
 }
 
 .Project-stack p {
     font-size: .8rem;
-    color: rgb(125, 125, 125);
+    color: black;
 }
 
 .project-card-four {
@@ -100,9 +128,21 @@
     align-items: center;
     justify-content: center;
     gap: .5rem;
-    color:  var(--alternateText);
-    background-color: var(--alternateBackground);
+    color: black;
+    background-color: white;
+    border: 1px solid black;
     padding: .2rem .5rem;
     border-radius: 5px;
     text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    .project-card-one a p {
+        max-width: 90%;
+    }
+
+    .project-card-one a svg {
+        font-size: 1rem;
+    }
 }

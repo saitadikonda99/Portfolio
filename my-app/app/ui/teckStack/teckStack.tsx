@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import './page.css'
+import './techStack.css'
 
 const page = () => {
   return (

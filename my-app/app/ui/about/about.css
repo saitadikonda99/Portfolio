@@ -1,0 +1,199 @@
+.AboutComponent {
+    width: 100%;
+}
+
+.AboutComponent-in {
+    width: 100%;
+}
+
+.about-one {
+    width: 100%;
+}
+
+.about-one a {
+    font-size: 1rem;
+    color: rgb(157, 157, 157);
+}
+
+.about-one a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.about-two {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-two h1 {
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 600;
+}
+
+.about-two a {
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    border: 2px solid black;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.about-two a:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.about-three {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.about-three p {
+    font-size: 1rem;
+    color: rgb(80, 80, 80);
+    line-height: 1.75rem;
+}
+
+.about-four p span {
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.about-five {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0rem;
+}
+
+.about-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgb(221, 221, 221);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+}
+
+.about-link:hover {
+    background-color: rgb(168, 168, 168);
+    cursor: pointer;
+}
+
+.about-link a {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.about-link p {
+    font-size: 1rem;
+    color: black;
+}
+
+.about-link.email {
+    border: 2px solid rgb(52, 168, 83);
+    background-color: rgb(198, 239, 206);
+}
+
+.about-link.email p {
+    color: rgb(52, 168, 83);
+    font-weight: 600;
+}
+
+.about-link.email:hover {
+    background-color: rgb(52, 168, 83);
+}
+
+.about-link.email:hover p {
+    color: white;
+}
+
+.about-link.github {
+    border: 2px solid rgb(36, 41, 46);
+    background-color: rgb(207, 217, 222);
+}
+
+.about-link.github p {
+    color: rgb(36, 41, 46);
+    font-weight: 600;
+}
+
+.about-link.github:hover {
+    background-color: rgb(36, 41, 46);
+}
+
+.about-link.github:hover p {
+    color: white;
+}
+
+.about-link.linkedin {
+    border: 2px solid rgb(10, 102, 194);
+    background-color: rgb(182, 212, 242);
+}
+
+.about-link.linkedin p {
+    color: rgb(10, 102, 194);
+    ;
+    font-weight: 600;
+}
+
+.about-link.linkedin:hover {
+    background-color: rgb(10, 102, 194);
+}
+
+.about-link.linkedin:hover p {
+    color: white;
+}
+
+.about-link.x {
+    border: 2px solid rgb(36, 41, 46);
+    background-color: rgb(207, 217, 222);
+    padding: .5rem 2rem .5rem 1rem;
+}
+
+.about-link.x p {
+    color: rgb(36, 41, 46);
+    font-weight: 600;
+}
+
+.about-link.x:hover {
+    background-color: rgb(36, 41, 46);
+}
+
+.about-link.x:hover p {
+    color: white;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+
+    .about-one a {
+        font-size: .8rem;
+    }
+
+    .about-two {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .about-two h1 {
+        font-size: 1.5rem;
+        color: black;
+        font-weight: 600;
+    }
+}
