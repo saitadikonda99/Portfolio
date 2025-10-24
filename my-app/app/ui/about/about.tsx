@@ -16,7 +16,7 @@ const socialLinks = [
     },
     {
         id: 2,
-        icon: '/GitHub.png',
+        icon: '/Github.png',
         link: 'https://github.com/saitadikonda99',
         name: 'GitHub'
     },
